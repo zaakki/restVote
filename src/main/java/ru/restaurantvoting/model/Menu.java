@@ -1,5 +1,8 @@
 package ru.restaurantvoting.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
@@ -10,6 +13,9 @@ import java.util.Collections;
 import java.util.List;
 
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "menu", uniqueConstraints = {@UniqueConstraint(columnNames = {"menu_date", "restaurant_id"}, name = "unique_menu")})
 public class Menu extends AbstractBaseEntity{
@@ -27,8 +33,7 @@ public class Menu extends AbstractBaseEntity{
     @NotNull
     private Restaurant restaurant;
 
-    public Menu() {
-    }
+
 
     public Menu(Menu m) {
         this(m.getId(), m.getDate());
@@ -41,30 +46,6 @@ public class Menu extends AbstractBaseEntity{
     public Menu(Integer id, LocalDate date, Restaurant restaurant) {
         super(id);
         this.date = date;
-        this.restaurant = restaurant;
-    }
-
-    public List<Dish> getDishes() {
-        return dishes;
-    }
-
-    public void setDishes(List<Dish> dishes) {
-        this.dishes.addAll(dishes);
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
-        this.date = date;
-    }
-
-    public Restaurant getRestaurant() {
-        return restaurant;
-    }
-
-    public void setRestaurant(Restaurant restaurant) {
         this.restaurant = restaurant;
     }
 

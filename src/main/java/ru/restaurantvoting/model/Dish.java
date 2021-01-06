@@ -1,6 +1,9 @@
 package ru.restaurantvoting.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Range;
@@ -8,6 +11,9 @@ import org.hibernate.validator.constraints.Range;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
+@Getter
+@Setter
+@NoArgsConstructor
 @Entity
 @Table(name = "dish", uniqueConstraints = {@UniqueConstraint( columnNames = {"menu_id","name"}, name = "unique_dish")})
 public class Dish extends AbstractNamedEntity {
@@ -25,7 +31,6 @@ public class Dish extends AbstractNamedEntity {
     private Menu menu;
 
 
-    public Dish (){}
 
     public Dish(Dish d){
 this(d.getId(),d.getName(),d.getPrice());
@@ -34,22 +39,6 @@ this(d.getId(),d.getName(),d.getPrice());
     public Dish (Integer id, String name, Integer price){
         super(id, name);
         this.price = price;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
-
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public Menu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(Menu menu) {
-        this.menu = menu;
     }
 
     @Override

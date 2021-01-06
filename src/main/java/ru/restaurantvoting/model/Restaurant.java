@@ -1,14 +1,20 @@
 package ru.restaurantvoting.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+
+
+@NoArgsConstructor
 @Entity
 @Table(name = "restaurant", uniqueConstraints = {@UniqueConstraint(columnNames = "name", name = "unique_restaurant")})
 public class Restaurant  extends AbstractNamedEntity{
-    public Restaurant() {
-    }
+
 
     public Restaurant(Restaurant r) {
         this(r.getId(), r.getName());

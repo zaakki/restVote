@@ -1,5 +1,8 @@
 package ru.restaurantvoting.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
@@ -14,28 +17,39 @@ import javax.validation.constraints.NotEmpty;
 import java.util.*;
 
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
+@NoArgsConstructor
 @Entity
 @Table(name = "users")
 public class User extends AbstractNamedEntity {
 
+    @Getter
+    @Setter
     @Column(name = "email", nullable = false, unique = true)
     @Email
     @NotBlank
     @SafeHtml
     private String email;
 
+    @Getter
+    @Setter
     @Column(name = "password", nullable = false)
     @NotEmpty
     @Length(min = 5)
     @SafeHtml
     private String password;
 
+    @Getter
+    @Setter
     @Column(name = "enabled", nullable = false, columnDefinition = "BOOLEAN DEFAULT TRUE")
     private boolean enabled = true;
 
+    @Getter
+    @Setter
     @Column(name = "registered", columnDefinition = "TIMESTAMP DEFAULT NOW()")
     private Date registered = new Date();
 
+    @Getter
+    @Setter
     @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
     @Enumerated(EnumType.STRING)
     @CollectionTable(name = "user_roles", joinColumns = @JoinColumn(name = "user_id"))
@@ -44,12 +58,12 @@ public class User extends AbstractNamedEntity {
     @BatchSize(size = 200)
     private Set<Role> roles;
 
+    @Getter
+    @Setter
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
     @OrderBy("date DESC")
     private List<Vote> votes = Collections.emptyList();
 
-    public User() {
-    }
 
     public User(User u) {
         this(u.getId(), u.getName(), u.getEmail(), u.getPassword(), u.isEnabled(), u.getRegistered(), u.getRoles());
@@ -68,52 +82,8 @@ public class User extends AbstractNamedEntity {
         setRoles(roles);
     }
 
-    public List<Vote> getVotes() {
-        return votes;
-    }
-
-    public void setVotes(List<Vote> votes) {
-        this.votes.addAll(votes);
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Date getRegistered() {
-        return registered;
-    }
-
-    public void setRegistered(Date registered) {
-        this.registered = registered;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
-
-    public boolean isEnabled() {
-        return enabled;
-    }
-
     public void setRoles(Collection<Role> roles) {
         this.roles = CollectionUtils.isEmpty(roles) ? EnumSet.noneOf(Role.class) : EnumSet.copyOf(roles);
-    }
-
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public String getPassword() {
-        return password;
     }
 
     @Override

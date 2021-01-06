@@ -1,11 +1,20 @@
 package ru.restaurantvoting.model;
 
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
 
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
+@Getter
+@Setter
 @Table(name = "vote", uniqueConstraints = {@UniqueConstraint(columnNames = {"vote_date", "user_id"}, name = "unique_vote")})
 public class Vote  extends AbstractBaseEntity{
 
@@ -23,8 +32,7 @@ public class Vote  extends AbstractBaseEntity{
     @Column(name = "vote_date", nullable = false)
     private LocalDate date;
 
-    public Vote() {
-    }
+
 
     public Vote(Vote v) {
         this(v.getId(), v.getDate());
@@ -32,30 +40,6 @@ public class Vote  extends AbstractBaseEntity{
 
     public Vote(Integer id, LocalDate date) {
         super(id);
-        this.date = date;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Menu getMenu() {
-        return menu;
-    }
-
-    public void setMenu(Menu menu) {
-        this.menu = menu;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public void setDate(LocalDate date) {
         this.date = date;
     }
 

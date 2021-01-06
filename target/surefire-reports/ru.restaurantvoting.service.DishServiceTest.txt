@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ru.restaurantvoting.service.DishServiceTest
 -------------------------------------------------------------------------------
-Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.436 s - in ru.restaurantvoting.service.DishServiceTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.406 s - in ru.restaurantvoting.service.DishServiceTest

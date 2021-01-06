@@ -1,11 +1,17 @@
 package ru.restaurantvoting.to;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.hibernate.validator.constraints.Range;
 import org.hibernate.validator.constraints.SafeHtml;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+@Getter
+@NoArgsConstructor
 public class DishTo extends BaseTo {
 
     @NotBlank
@@ -16,8 +22,7 @@ public class DishTo extends BaseTo {
     @Range(min = 1)
     private Integer price;
 
-    public DishTo() {
-    }
+
 
     public DishTo(Integer id, String name, Integer price) {
         super(id);
@@ -25,13 +30,6 @@ public class DishTo extends BaseTo {
         this.price = price;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public Integer getPrice() {
-        return price;
-    }
 
     @Override
     public String toString() {
