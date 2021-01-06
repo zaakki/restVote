@@ -13,11 +13,11 @@ import java.time.LocalTime;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static ru.restaurantvoting.dao.MenuTestData.MENU_ID_2;
-import static ru.restaurantvoting.dao.MenuTestData.MENU_ID_3;
-import static ru.restaurantvoting.dao.UserTestData.ADMIN_ID;
-import static ru.restaurantvoting.dao.UserTestData.USER_ID;
-import static ru.restaurantvoting.dao.VoteTestData.*;
+import static ru.restaurantvoting.data.MenuTestData.MENU_ID_2;
+import static ru.restaurantvoting.data.MenuTestData.MENU_ID_3;
+import static ru.restaurantvoting.data.UserTestData.ADMIN_ID;
+import static ru.restaurantvoting.data.UserTestData.USER_ID;
+import static ru.restaurantvoting.data.VoteTestData.*;
 import static ru.restaurantvoting.util.ValidationUtil.EXPIRED_TIME;
 
 class VoteServiceTest extends AbstractServiceTest {
@@ -46,11 +46,11 @@ class VoteServiceTest extends AbstractServiceTest {
                 service.get(1, 1, 1));
     }
 
-    @Test
-    void getForUserAndDate() throws Exception {
-        Vote vote = service.getForUserAndDate(USER_ID, LocalDate.of(2019, 4, 20));
-        assertMatch(vote, VOTE_1);
-    }
+//    @Test
+//    void getForUserAndDate() throws Exception {
+//        Vote vote = service.getForUserAndDate(USER_ID, LocalDate.of(2019, 4, 20));
+//        assertMatch(vote, VOTE_1);
+//    }
 
     @Test
     void update() throws Exception {

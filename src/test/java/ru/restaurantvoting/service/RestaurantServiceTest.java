@@ -11,7 +11,7 @@ import javax.validation.ConstraintViolationException;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static ru.restaurantvoting.dao.RestaurantTestData.*;
+import static ru.restaurantvoting.data.RestaurantTestData.*;
 
 class RestaurantServiceTest extends AbstractServiceTest {
 

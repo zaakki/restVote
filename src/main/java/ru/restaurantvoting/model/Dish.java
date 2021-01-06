@@ -9,13 +9,15 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 @Entity
-@Table(name = "dish", uniqueConstraints = {@UniqueConstraint(columnNames = {"menu_id", "name"}, name = "unique_dish")})
+@Table(name = "dish", uniqueConstraints = {@UniqueConstraint( columnNames = {"menu_id","name"}, name = "unique_dish")})
 public class Dish extends AbstractNamedEntity {
+
     @Column(name = "price", nullable = false)
     @Range(min = 1)
-    private int price;
+    private Integer price;
 
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "menu_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @NotNull
@@ -23,23 +25,22 @@ public class Dish extends AbstractNamedEntity {
     private Menu menu;
 
 
-    public Dish() {
+    public Dish (){}
+
+    public Dish(Dish d){
+this(d.getId(),d.getName(),d.getPrice());
     }
 
-    public Dish(Dish d) {
-        this(d.getId(), d.getName(), d.getPrice());
-    }
-
-    public Dish(Integer id, String name, int price) {
+    public Dish (Integer id, String name, Integer price){
         super(id, name);
         this.price = price;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 
@@ -54,9 +55,10 @@ public class Dish extends AbstractNamedEntity {
     @Override
     public String toString() {
         return "Dish{" +
-                ", id=" + id +
-                ", name='" + name + '\'' +
                 "price=" + price +
+                ", menu=" + menu +
+                ", name='" + name + '\'' +
+                ", id=" + id +
                 '}';
     }
 }

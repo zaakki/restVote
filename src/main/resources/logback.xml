@@ -5,7 +5,7 @@
     <jmxConfigurator/>
 
     <appender name="file" class="ch.qos.logback.core.FileAppender">
-        <file>${RESTVOTE_ROOT}/log/restaurantVoting.log</file>
+        <file>${RESTVOTE_ROOT}/log/restaurantvoting.log</file>
 
         <encoder>
             <charset>UTF-8</charset>

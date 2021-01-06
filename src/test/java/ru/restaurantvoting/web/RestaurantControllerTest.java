@@ -16,8 +16,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ru.restaurantvoting.TestUtil.readFromJson;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.RestaurantTestData.*;
-import static ru.restaurantvoting.dao.UserTestData.ADMIN;
+import static ru.restaurantvoting.data.RestaurantTestData.*;
+import static ru.restaurantvoting.data.UserTestData.ADMIN;
 import static ru.restaurantvoting.util.exception.ErrorType.DATA_ERROR;
 import static ru.restaurantvoting.util.exception.ErrorType.VALIDATION_ERROR;
 
@@ -70,10 +70,14 @@ class RestaurantControllerTest extends AbstractControllerTest {
 
     @Test
     void delete() throws Exception {
-        mockMvc.perform(MockMvcRequestBuilders.delete(REST_URL + RESTAURANT_ID_1)
-                .with(userHttpBasic(ADMIN)))
+        mockMvc.perform(MockMvcRequestBuilders.delete(REST_URL+RESTAURANT_ID_1)
+        .with(userHttpBasic(ADMIN)))
                 .andDo(print())
                 .andExpect(status().isNoContent());
+//        mockMvc.perform(MockMvcRequestBuilders.delete(REST_URL + RESTAURANT_ID_1)
+//                .with(userHttpBasic(ADMIN)))
+//                .andDo(print())
+//                .andExpect(status().isNoContent());
         assertMatch(restaurantService.getAll(), RESTAURANT_2, RESTAURANT_3);
     }
 

@@ -1,4 +1,4 @@
-package ru.restaurantvoting.dao;
+package ru.restaurantvoting.data;
 
 import org.springframework.test.web.servlet.ResultMatcher;
 import ru.restaurantvoting.model.Vote;

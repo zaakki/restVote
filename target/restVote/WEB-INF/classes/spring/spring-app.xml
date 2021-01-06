@@ -16,8 +16,8 @@
     <context:property-placeholder location="classpath:db/hsqldb.properties" system-properties-mode="OVERRIDE"/>
 
 
-    <context:component-scan base-package="ru.restaurantvoting.service"/>
-    <context:component-scan base-package="ru.restaurantvoting.repository"/>
+    <context:component-scan base-package="ru.restaurantvoting.**.service"/>
+    <context:component-scan base-package="ru.restaurantvoting.**.repository"/>
 
     <bean id="dataSource"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource"
@@ -36,7 +36,7 @@
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:dataSource-ref="dataSource"
-          p:packagesToScan="ru.restaurantVoting.model">
+          p:packagesToScan="ru.restaurantvoting.model">
 
         <property name="jpaProperties">
             <map>

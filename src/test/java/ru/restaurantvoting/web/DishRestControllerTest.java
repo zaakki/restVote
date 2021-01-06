@@ -8,21 +8,18 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import ru.restaurantvoting.model.Dish;
 import ru.restaurantvoting.to.DishTo;
-import ru.restaurantvoting.web.AbstractControllerTest;
-import ru.restaurantvoting.web.DishRestController;
 import ru.restaurantvoting.web.json.JsonUtil;
 
 import java.time.LocalDate;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ru.restaurantvoting.TestUtil.readFromJson;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.DishTestData.*;
-import static ru.restaurantvoting.dao.MenuTestData.*;
-import static ru.restaurantvoting.dao.UserTestData.ADMIN;
+import static ru.restaurantvoting.data.DishTestData.*;
+import static ru.restaurantvoting.data.MenuTestData.*;
+import static ru.restaurantvoting.data.UserTestData.ADMIN;
 import static ru.restaurantvoting.util.exception.ErrorType.DATA_ERROR;
 import static ru.restaurantvoting.util.exception.ErrorType.VALIDATION_ERROR;
 import static ru.restaurantvoting.web.DishRestController.MENUS_URL;

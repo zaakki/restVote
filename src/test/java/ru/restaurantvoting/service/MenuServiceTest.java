@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import ru.restaurantvoting.dao.DishTestData;
+import ru.restaurantvoting.data.DishTestData;
 import ru.restaurantvoting.model.Dish;
 import ru.restaurantvoting.model.Menu;
 import ru.restaurantvoting.repository.JpaUtil;
@@ -19,9 +19,9 @@ import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static ru.restaurantvoting.dao.DishTestData.*;
-import static ru.restaurantvoting.dao.MenuTestData.*;
-import static ru.restaurantvoting.dao.RestaurantTestData.*;
+import static ru.restaurantvoting.data.DishTestData.*;
+import static ru.restaurantvoting.data.MenuTestData.*;
+import static ru.restaurantvoting.data.RestaurantTestData.*;
 
 class MenuServiceTest extends AbstractServiceTest {
 

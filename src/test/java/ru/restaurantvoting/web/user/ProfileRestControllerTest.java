@@ -17,10 +17,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ru.restaurantvoting.TestUtil.readFromJson;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.UserTestData.*;
+import static ru.restaurantvoting.data.UserTestData.*;
 import static ru.restaurantvoting.util.exception.ErrorType.DATA_ERROR;
 import static ru.restaurantvoting.util.exception.ErrorType.VALIDATION_ERROR;
-import static ru.restaurantvoting.web.user.ProfileRestController.REST_URL;
 import static ru.restaurantvoting.web.user.ProfileRestController.REST_URL;
 
 

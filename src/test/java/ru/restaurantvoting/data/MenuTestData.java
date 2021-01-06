@@ -1,4 +1,4 @@
-package ru.restaurantvoting.dao;
+package ru.restaurantvoting.data;
 
 import org.springframework.test.web.servlet.ResultMatcher;
 import ru.restaurantvoting.model.Menu;
@@ -17,11 +17,11 @@ public class MenuTestData {
     public static final int MENU_ID_3 = START_SEQ + 7;
     public static final int MENU_ID_4 = START_SEQ + 8;
     public static final int MENU_ID_5 = START_SEQ + 9;
-//2020-11-19', 100002),
-//       ('2020-11-20', 100003),
-//       (current_date, 100003),
-//       (current_date, 100004),
-//       ('2020-06-12', 100002);
+//2020-11-19
+//2020-11-20
+//2021-01-06
+//2021-01-06
+//2020-06-12
     public static final Menu MENU_1 = new Menu(MENU_ID_1, LocalDate.of(2020, 11, 19));
     public static final Menu MENU_2 = new Menu(MENU_ID_2, LocalDate.of(2020, 11, 20));
     public static final Menu MENU_3 = new Menu(MENU_ID_3, LocalDate.now());

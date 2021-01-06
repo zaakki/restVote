@@ -19,9 +19,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ru.restaurantvoting.TestUtil.readFromJson;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.MenuTestData.*;
-import static ru.restaurantvoting.dao.RestaurantTestData.*;
-import static ru.restaurantvoting.dao.UserTestData.ADMIN;
+import static ru.restaurantvoting.data.MenuTestData.*;
+import static ru.restaurantvoting.data.RestaurantTestData.*;
+import static ru.restaurantvoting.data.UserTestData.ADMIN;
 import static ru.restaurantvoting.util.MenuUtil.menuFromTo;
 import static ru.restaurantvoting.util.exception.ErrorType.DATA_ERROR;
 import static ru.restaurantvoting.util.exception.ErrorType.VALIDATION_ERROR;

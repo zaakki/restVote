@@ -269,6 +269,7 @@
             <artifactId>jackson-datatype-jsr310</artifactId>
             <version>${jackson-json.version}</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>

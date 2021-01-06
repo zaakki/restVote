@@ -36,7 +36,7 @@
 
     <bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"
           p:dataSource-ref="dataSource"
-          p:packagesToScan="ru.restaurantVoting.model">
+          p:packagesToScan="ru.restaurantvoting.model">
 
         <property name="jpaProperties">
             <map>

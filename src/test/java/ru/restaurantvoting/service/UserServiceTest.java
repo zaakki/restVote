@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static ru.restaurantvoting.dao.UserTestData.*;
+import static ru.restaurantvoting.data.UserTestData.*;
 
 class UserServiceTest extends AbstractServiceTest {
 

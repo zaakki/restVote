@@ -18,11 +18,11 @@ import static ru.restaurantvoting.util.ValidationUtil.checkNotFoundWithId;
 
 @Service
 public class DishService {
-    private static final Sort SORT_NAME_PRICE = new Sort(Sort.Direction.ASC, "name", "price");
+    private static final Sort SORT_NAME_PRICE = new Sort(Sort.Direction.ASC, "name","price" );
 
     private final DishRepository repository;
 
-    private MenuRepository menuRepository;
+    private final MenuRepository menuRepository;
 
     @Autowired
     public DishService(DishRepository repository, MenuRepository menuRepository) {

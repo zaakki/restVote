@@ -1,33 +1,26 @@
 package ru.restaurantvoting.web.user;
 
-import org.aspectj.lang.annotation.Before;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
-import org.springframework.web.context.WebApplicationContext;
 import ru.restaurantvoting.model.Role;
 import ru.restaurantvoting.model.User;
-import ru.restaurantvoting.service.UserService;
 import ru.restaurantvoting.util.exception.ErrorType;
 import ru.restaurantvoting.web.AbstractControllerTest;
 import ru.restaurantvoting.web.json.JsonUtil;
-import ru.restaurantvoting.web.user.AdminRestController;
 
 import java.util.Collections;
 
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.csrf;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static ru.restaurantvoting.TestUtil.readFromJson;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.UserTestData.*;
+import static ru.restaurantvoting.data.UserTestData.*;
 import static ru.restaurantvoting.util.exception.ErrorType.DATA_ERROR;
 import static ru.restaurantvoting.util.exception.ErrorType.VALIDATION_ERROR;
 
@@ -36,12 +29,10 @@ class AdminRestControllerTest extends AbstractControllerTest {
 
     private static final String REST_URL = AdminRestController.REST_URL + '/';
 
-
     @Test
     void get() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get(REST_URL + ADMIN_ID)
-                .with(userHttpBasic(ADMIN)))
-                .andDo(print())
+                .with((userHttpBasic(ADMIN))))
                 .andExpect(status().isOk())
                 .andDo(print())
                 // https://jira.spring.io/browse/SPR-14472
@@ -126,14 +117,6 @@ class AdminRestControllerTest extends AbstractControllerTest {
         assertMatch(userService.getAll(), ADMIN, expected, USER);
     }
 
-    //@Test
-    //    void getAll() throws Exception {
-    //        perform(MockMvcRequestBuilders.get(REST_URL)
-    //                .with(userHttpBasic(admin)))
-    //                .andExpect(status().isOk())
-    //                .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-    //                .andExpect(USER_MATCHER.contentJson(admin, user));
-    //    }
     @Test
     void getAll() throws Exception {
         mockMvc.perform(MockMvcRequestBuilders.get(REST_URL)
@@ -152,7 +135,7 @@ class AdminRestControllerTest extends AbstractControllerTest {
                 .content(jsonWithPassword(created, "password")))
                 .andDo(print())
                 .andExpect(status().isUnprocessableEntity())
-                .andExpect(errorType(VALIDATION_ERROR));
+                .andExpect(errorType(ErrorType.VALIDATION_ERROR));
     }
 
     @Test

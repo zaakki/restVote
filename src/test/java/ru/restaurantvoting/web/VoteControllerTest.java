@@ -16,9 +16,9 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static ru.restaurantvoting.TestUtil.userHttpBasic;
-import static ru.restaurantvoting.dao.MenuTestData.*;
-import static ru.restaurantvoting.dao.UserTestData.*;
-import static ru.restaurantvoting.dao.VoteTestData.*;
+import static ru.restaurantvoting.data.MenuTestData.*;
+import static ru.restaurantvoting.data.UserTestData.*;
+import static ru.restaurantvoting.data.VoteTestData.*;
 
 class VoteControllerTest extends AbstractControllerTest {
 
