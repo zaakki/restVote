@@ -1,0 +1,254 @@
+2021-01-06 17:06:50,429 INFO  ContextLoader [ContextLoader.java:270] Root WebApplicationContext: initialization started
+2021-01-06 17:06:50,607 INFO  SpringSecurityCoreVersion [SpringSecurityCoreVersion.java:81] You are running with Spring Security Core 5.1.5.RELEASE
+2021-01-06 17:06:50,610 INFO  SecurityNamespaceHandler [SecurityNamespaceHandler.java:78] Spring Security 'config' module version is 5.1.5.RELEASE
+2021-01-06 17:06:50,659 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/admin/**
+2021-01-06 17:06:50,660 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'permitAll()' for //rest/menus/byDate
+2021-01-06 17:06:50,660 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/dishes/**
+2021-01-06 17:06:50,660 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/restaurants/**
+2021-01-06 17:06:50,661 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAuthenticated()' for /rest/profile/**
+2021-01-06 17:06:50,661 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAnonymous()' for /profile/register
+2021-01-06 17:06:50,661 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAuthenticated()' for /**
+2021-01-06 17:06:50,677 INFO  HttpSecurityBeanDefinitionParser [HttpSecurityBeanDefinitionParser.java:307] Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2021-01-06 17:06:50,810 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-01-06 17:06:50,944 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 119ms. Found 5 repository interfaces.
+2021-01-06 17:06:51,842 INFO  EhcacheManager [EhcacheManager.java:307] Cache 'menusByDate' created in EhcacheManager.
+2021-01-06 17:06:51,845 INFO  EhcacheManager [EhcacheManager.java:307] Cache 'users' created in EhcacheManager.
+2021-01-06 17:06:51,874 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=menusByDate
+2021-01-06 17:06:51,876 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2021-01-06 17:06:51,912 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=menusByDate
+2021-01-06 17:06:51,913 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2021-01-06 17:06:51,982 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-06 17:06:52,080 INFO  Version [Version.java:46] HHH000412: Hibernate Core {5.4.3.Final}
+2021-01-06 17:06:52,259 INFO  Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-06 17:06:52,616 INFO  Dialect [Dialect.java:158] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-06 17:06:52,831 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.0.17.Final
+2021-01-06 17:06:53,030 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-06 17:06:53,033 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-06 17:06:53,287 INFO  DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.SecurityContextPersistenceFilter@626d5afa, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49f61da9, org.springframework.security.web.header.HeaderWriterFilter@e5afa70, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25bf73f3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@73306e8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52956c6a, org.springframework.security.web.access.ExceptionTranslationFilter@3b71070b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@35c8f9f7]
+2021-01-06 17:06:53,503 WARN  XmlWebApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dishService' defined in file [G:\restVote\target\restVote\WEB-INF\classes\ru\restaurantvoting\service\DishService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+2021-01-06 17:06:53,504 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-06 17:06:53,510 INFO  EhcacheManager [EhcacheManager.java:218] Cache 'menusByDate' removed from EhcacheManager.
+2021-01-06 17:06:53,510 INFO  EhcacheManager [EhcacheManager.java:218] Cache 'users' removed from EhcacheManager.
+2021-01-06 17:06:53,516 ERROR ContextLoader [ContextLoader.java:312] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dishService' defined in file [G:\restVote\target\restVote\WEB-INF\classes\ru\restaurantvoting\service\DishService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1727)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 61 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:74)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 72 common frames omitted
+2021-01-06 17:09:00,835 INFO  ContextLoader [ContextLoader.java:270] Root WebApplicationContext: initialization started
+2021-01-06 17:09:01,008 INFO  SpringSecurityCoreVersion [SpringSecurityCoreVersion.java:81] You are running with Spring Security Core 5.1.5.RELEASE
+2021-01-06 17:09:01,011 INFO  SecurityNamespaceHandler [SecurityNamespaceHandler.java:78] Spring Security 'config' module version is 5.1.5.RELEASE
+2021-01-06 17:09:01,068 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/admin/**
+2021-01-06 17:09:01,068 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'permitAll()' for //rest/menus/byDate
+2021-01-06 17:09:01,068 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/dishes/**
+2021-01-06 17:09:01,068 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'hasRole('ADMIN')' for /rest/restaurants/**
+2021-01-06 17:09:01,068 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAuthenticated()' for /rest/profile/**
+2021-01-06 17:09:01,069 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAnonymous()' for /profile/register
+2021-01-06 17:09:01,069 INFO  FilterInvocationSecurityMetadataSourceParser [FilterInvocationSecurityMetadataSourceParser.java:194] Creating access control expression attribute 'isAuthenticated()' for /**
+2021-01-06 17:09:01,086 INFO  HttpSecurityBeanDefinitionParser [HttpSecurityBeanDefinitionParser.java:307] Checking sorted filter chain: [Root bean: class [org.springframework.security.web.context.SecurityContextPersistenceFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 200, Root bean: class [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 400, Root bean: class [org.springframework.security.web.header.HeaderWriterFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 500, Root bean: class [org.springframework.security.web.authentication.www.BasicAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 1800, Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.security.config.http.HttpConfigurationBuilder$SecurityContextHolderAwareRequestFilterBeanFactory#0; factoryMethodName=getBean; initMethodName=null; destroyMethodName=null, order = 2000, Root bean: class [org.springframework.security.web.authentication.AnonymousAuthenticationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2300, Root bean: class [org.springframework.security.web.access.ExceptionTranslationFilter]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null, order = 2500, <org.springframework.security.web.access.intercept.FilterSecurityInterceptor#0>, order = 2600]
+2021-01-06 17:09:01,225 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:126] Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-01-06 17:09:01,345 INFO  RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:182] Finished Spring Data repository scanning in 108ms. Found 5 repository interfaces.
+2021-01-06 17:09:02,030 INFO  EhcacheManager [EhcacheManager.java:307] Cache 'menusByDate' created in EhcacheManager.
+2021-01-06 17:09:02,031 INFO  EhcacheManager [EhcacheManager.java:307] Cache 'users' created in EhcacheManager.
+2021-01-06 17:09:02,052 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=menusByDate
+2021-01-06 17:09:02,054 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2021-01-06 17:09:02,077 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=menusByDate
+2021-01-06 17:09:02,078 INFO  Eh107CacheManager [Eh107CacheManager.java:378] Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=file./G./restVote/target/restVote/WEB-INF/classes/cache/ehcache.xml,Cache=users
+2021-01-06 17:09:02,127 INFO  LogHelper [LogHelper.java:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-01-06 17:09:02,208 INFO  Version [Version.java:46] HHH000412: Hibernate Core {5.4.3.Final}
+2021-01-06 17:09:02,379 INFO  Version [JavaReflectionManager.java:49] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-01-06 17:09:02,718 INFO  Dialect [Dialect.java:158] HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-01-06 17:09:02,909 INFO  Version [Version.java:21] HV000001: Hibernate Validator 6.0.17.Final
+2021-01-06 17:09:03,092 INFO  JtaPlatformInitiator [JtaPlatformInitiator.java:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-01-06 17:09:03,095 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:415] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-01-06 17:09:03,340 INFO  DefaultSecurityFilterChain [DefaultSecurityFilterChain.java:43] Creating filter chain: any request, [org.springframework.security.web.context.SecurityContextPersistenceFilter@8574de3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@322cf6b5, org.springframework.security.web.header.HeaderWriterFilter@5f311609, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@226b7084, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@493b6ffe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ee0623a, org.springframework.security.web.access.ExceptionTranslationFilter@1ab5df6b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3001c5f4]
+2021-01-06 17:09:03,546 WARN  XmlWebApplicationContext [AbstractApplicationContext.java:557] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dishService' defined in file [G:\restVote\target\restVote\WEB-INF\classes\ru\restaurantvoting\service\DishService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+2021-01-06 17:09:03,546 INFO  LocalContainerEntityManagerFactoryBean [AbstractEntityManagerFactoryBean.java:597] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-01-06 17:09:03,552 INFO  EhcacheManager [EhcacheManager.java:218] Cache 'menusByDate' removed from EhcacheManager.
+2021-01-06 17:09:03,553 INFO  EhcacheManager [EhcacheManager.java:218] Cache 'users' removed from EhcacheManager.
+2021-01-06 17:09:03,556 ERROR ContextLoader [ContextLoader.java:312] Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dishService' defined in file [G:\restVote\target\restVote\WEB-INF\classes\ru\restaurantvoting\service\DishService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1187)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:400)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4716)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5177)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:717)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:690)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:706)
+	at org.apache.catalina.startup.HostConfig.manageApp(HostConfig.java:1727)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:459)
+	at org.apache.catalina.mbeans.MBeanFactory.createStandardContext(MBeanFactory.java:408)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.tomcat.util.modeler.BaseModelMBean.invoke(BaseModelMBean.java:288)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:809)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at java.management/com.sun.jmx.remote.security.MBeanServerAccessController.invoke(MBeanServerAccessController.java:468)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1466)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1307)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1406)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:827)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:359)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:691)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:391)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dishRepository': Invocation of init method failed; nested exception is java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1171)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	... 61 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Not a managed type: class ru.restaurantvoting.model.Dish
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:582)
+	at org.hibernate.metamodel.internal.MetamodelImpl.managedType(MetamodelImpl.java:85)
+	at org.springframework.data.jpa.repository.support.JpaMetamodelEntityInformation.<init>(JpaMetamodelEntityInformation.java:74)
+	at org.springframework.data.jpa.repository.support.JpaEntityInformationSupport.getEntityInformation(JpaEntityInformationSupport.java:66)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getEntityInformation(JpaRepositoryFactory.java:201)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:151)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:134)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactory.getTargetRepository(JpaRepositoryFactory.java:65)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:305)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:211)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:121)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 72 common frames omitted

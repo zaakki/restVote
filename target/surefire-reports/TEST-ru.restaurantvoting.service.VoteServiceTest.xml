@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.restaurantvoting.service.VoteServiceTest" time="0.073" tests="8" errors="1" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="15"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.class.path" value="G:\restVote\target\test-classes;G:\restVote\target\classes;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-web\5.1.5.RELEASE\spring-security-web-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-core\5.1.5.RELEASE\spring-security-core-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-web\5.1.8.RELEASE\spring-web-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-config\5.1.5.RELEASE\spring-security-config-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-context-support\5.1.8.RELEASE\spring-context-support-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\data\spring-data-jpa\2.1.9.RELEASE\spring-data-jpa-2.1.9.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\data\spring-data-commons\2.1.9.RELEASE\spring-data-commons-2.1.9.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-orm\5.1.8.RELEASE\spring-orm-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-jdbc\5.1.8.RELEASE\spring-jdbc-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-tx\5.1.8.RELEASE\spring-tx-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\aspectj\aspectjrt\1.9.3\aspectjrt-1.9.3.jar;C:\Users\zaki\.m2\repository\org\hibernate\hibernate-core\5.4.3.Final\hibernate-core-5.4.3.Final.jar;C:\Users\zaki\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\zaki\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\zaki\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\zaki\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\zaki\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\zaki\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\zaki\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\zaki\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\zaki\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\zaki\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\zaki\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\zaki\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\zaki\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.17.Final\hibernate-validator-6.0.17.Final.jar;C:\Users\zaki\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\zaki\.m2\repository\org\hibernate\hibernate-jcache\5.4.3.Final\hibernate-jcache-5.4.3.Final.jar;C:\Users\zaki\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\zaki\.m2\repository\org\glassfish\javax.el\3.0.1-b11\javax.el-3.0.1-b11.jar;C:\Users\zaki\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\zaki\.m2\repository\org\ehcache\ehcache\3.7.1\ehcache-3.7.1.jar;C:\Users\zaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.4.0-b180830.0438\jaxb-runtime-2.4.0-b180830.0438.jar;C:\Users\zaki\.m2\repository\org\glassfish\jaxb\txw2\2.4.0-b180830.0438\txw2-2.4.0-b180830.0438.jar;C:\Users\zaki\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\zaki\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\zaki\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\zaki\.m2\repository\org\apache\tomcat\tomcat-servlet-api\9.0.21\tomcat-servlet-api-9.0.21.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-webmvc\5.1.8.RELEASE\spring-webmvc-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\zaki\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\zaki\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\zaki\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\zaki\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;C:\Users\zaki\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-test\5.1.8.RELEASE\spring-test-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-test\5.1.5.RELEASE\spring-security-test-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\zaki\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\zaki\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\zaki\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\zaki\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\zaki\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\zaki\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\zaki\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\zaki\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\zaki\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9\jackson-databind-2.9.9.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-hibernate5\2.9.9\jackson-datatype-hibernate5-2.9.9.jar;C:\Users\zaki\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.9\jackson-datatype-jsr310-2.9.9.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Moscow"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="15"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin"/>
+    <property name="sun.java.command" value="C:\Users\zaki\AppData\Local\Temp\surefire13396215397815122471\surefirebooter1425538910532971838.jar C:\Users\zaki\AppData\Local\Temp\surefire13396215397815122471 2021-01-03T01-24-49_537-jvmRun1 surefire1035124223868373035tmp surefire_06103786116379852650tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="G:\restVote\target\test-classes;G:\restVote\target\classes;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-web\5.1.5.RELEASE\spring-security-web-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-core\5.1.5.RELEASE\spring-security-core-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-aop\5.1.8.RELEASE\spring-aop-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-beans\5.1.8.RELEASE\spring-beans-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-context\5.1.8.RELEASE\spring-context-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-core\5.1.8.RELEASE\spring-core-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-jcl\5.1.8.RELEASE\spring-jcl-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-expression\5.1.8.RELEASE\spring-expression-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-web\5.1.8.RELEASE\spring-web-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-config\5.1.5.RELEASE\spring-security-config-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\hsqldb\hsqldb\2.5.0\hsqldb-2.5.0.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-context-support\5.1.8.RELEASE\spring-context-support-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\data\spring-data-jpa\2.1.9.RELEASE\spring-data-jpa-2.1.9.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\data\spring-data-commons\2.1.9.RELEASE\spring-data-commons-2.1.9.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-orm\5.1.8.RELEASE\spring-orm-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-jdbc\5.1.8.RELEASE\spring-jdbc-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-tx\5.1.8.RELEASE\spring-tx-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\aspectj\aspectjrt\1.9.3\aspectjrt-1.9.3.jar;C:\Users\zaki\.m2\repository\org\hibernate\hibernate-core\5.4.3.Final\hibernate-core-5.4.3.Final.jar;C:\Users\zaki\.m2\repository\org\jboss\logging\jboss-logging\3.3.2.Final\jboss-logging-3.3.2.Final.jar;C:\Users\zaki\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\zaki\.m2\repository\org\javassist\javassist\3.24.0-GA\javassist-3.24.0-GA.jar;C:\Users\zaki\.m2\repository\net\bytebuddy\byte-buddy\1.9.10\byte-buddy-1.9.10.jar;C:\Users\zaki\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\zaki\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\zaki\.m2\repository\org\jboss\jandex\2.0.5.Final\jandex-2.0.5.Final.jar;C:\Users\zaki\.m2\repository\com\fasterxml\classmate\1.3.4\classmate-1.3.4.jar;C:\Users\zaki\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\zaki\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar;C:\Users\zaki\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.0.Final\hibernate-commons-annotations-5.1.0.Final.jar;C:\Users\zaki\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\zaki\.m2\repository\org\hibernate\validator\hibernate-validator\6.0.17.Final\hibernate-validator-6.0.17.Final.jar;C:\Users\zaki\.m2\repository\javax\validation\validation-api\2.0.1.Final\validation-api-2.0.1.Final.jar;C:\Users\zaki\.m2\repository\org\hibernate\hibernate-jcache\5.4.3.Final\hibernate-jcache-5.4.3.Final.jar;C:\Users\zaki\.m2\repository\org\jsoup\jsoup\1.12.1\jsoup-1.12.1.jar;C:\Users\zaki\.m2\repository\org\glassfish\javax.el\3.0.1-b11\javax.el-3.0.1-b11.jar;C:\Users\zaki\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\zaki\.m2\repository\org\ehcache\ehcache\3.7.1\ehcache-3.7.1.jar;C:\Users\zaki\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.4.0-b180830.0438\jaxb-runtime-2.4.0-b180830.0438.jar;C:\Users\zaki\.m2\repository\org\glassfish\jaxb\txw2\2.4.0-b180830.0438\txw2-2.4.0-b180830.0438.jar;C:\Users\zaki\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\zaki\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\zaki\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\zaki\.m2\repository\org\apache\tomcat\tomcat-servlet-api\9.0.21\tomcat-servlet-api-9.0.21.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-webmvc\5.1.8.RELEASE\spring-webmvc-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.5.1\junit-jupiter-engine-5.5.1.jar;C:\Users\zaki\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\zaki\.m2\repository\org\junit\platform\junit-platform-engine\1.5.1\junit-platform-engine-1.5.1.jar;C:\Users\zaki\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\zaki\.m2\repository\org\junit\platform\junit-platform-commons\1.5.1\junit-platform-commons-1.5.1.jar;C:\Users\zaki\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.5.1\junit-jupiter-api-5.5.1.jar;C:\Users\zaki\.m2\repository\org\springframework\spring-test\5.1.8.RELEASE\spring-test-5.1.8.RELEASE.jar;C:\Users\zaki\.m2\repository\org\springframework\security\spring-security-test\5.1.5.RELEASE\spring-security-test-5.1.5.RELEASE.jar;C:\Users\zaki\.m2\repository\org\assertj\assertj-core\3.12.2\assertj-core-3.12.2.jar;C:\Users\zaki\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\zaki\.m2\repository\com\jayway\jsonpath\json-path\2.4.0\json-path-2.4.0.jar;C:\Users\zaki\.m2\repository\net\minidev\json-smart\2.3\json-smart-2.3.jar;C:\Users\zaki\.m2\repository\net\minidev\accessors-smart\1.2\accessors-smart-1.2.jar;C:\Users\zaki\.m2\repository\org\ow2\asm\asm\5.0.4\asm-5.0.4.jar;C:\Users\zaki\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\zaki\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\zaki\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\zaki\.m2\repository\javax\annotation\javax.annotation-api\1.3.2\javax.annotation-api-1.3.2.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.9.9\jackson-databind-2.9.9.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.9.0\jackson-annotations-2.9.0.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.9.9\jackson-core-2.9.9.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-hibernate5\2.9.9\jackson-datatype-hibernate5-2.9.9.jar;C:\Users\zaki\.m2\repository\javax\transaction\jta\1.1\jta-1.1.jar;C:\Users\zaki\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.9.9\jackson-datatype-jsr310-2.9.9.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\zaki"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-10-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-15.0.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="G:\restVote"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\zaki\AppData\Local\Temp\surefire13396215397815122471\surefirebooter1425538910532971838.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="15.0.1+9-18"/>
+    <property name="user.name" value="zaki"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\zaki\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\zaki\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2020.2.3"/>
+    <property name="java.version" value="15.0.1"/>
+    <property name="user.dir" value="G:\restVote"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-15.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Java\jdk-15.0.1\bin;C:\Program Files\Maven\bin;C:\Program Files\Git\cmd;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\zaki\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\bin;;C:\Users\zaki\AppData\Local\GitHubDesktop\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="15.0.1+9-18"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="59.0"/>
+  </properties>
+  <testcase name="create" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.016">
+    <failure message="&#10;Expecting:&#10; &lt;&quot;[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ArrayList@6792aa3e)&quot;&gt;&#10;to be equal to:&#10; &lt;&quot;[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ListN@1027cdcd)&quot;&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ArrayList@6792aa3e)">
+to be equal to:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ListN@1027cdcd)">
+but was not.
+	at ru.restaurantvoting.service.VoteServiceTest.create(VoteServiceTest.java:31)
+]]></failure>
+    <system-out><![CDATA[01:24:54.307 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.t.c.support.AbstractTestContextBootstrapper.getDefaultTestExecutionListenerClassNames:248&amp#27;[0;39m - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+01:24:54.308 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.t.c.support.AbstractTestContextBootstrapper.getTestExecutionListeners:177&amp#27;[0;39m - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@22495f2f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@25fb43a9, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@59fa5a39, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6dccdc50, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59456e1, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@7a8dbbf1, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@71ad1d0b, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@7a087132]
+01:24:54.312 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.startTransaction:107&amp#27;[0;39m - Began transaction (1) for test context [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@2c10f9f3, testMethod = create@VoteServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@74ab8610]; rollback [true]
+&amp#27;[35mStart stopWatch
+&amp#27;[0;39mHibernate: 
+    call next value for global_seq
+Hibernate: 
+    /* insert ru.restaurantvoting.model.Vote
+        */ insert 
+        into
+            vote
+            (vote_date, menu_id, user_id, id) 
+        values
+            (?, ?, ?, ?)
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Vote as generatedAlias0 
+    order by
+        generatedAlias0.date asc */ select
+            vote0_.id as id1_5_,
+            vote0_.vote_date as vote_dat2_5_,
+            vote0_.menu_id as menu_id3_5_,
+            vote0_.user_id as user_id4_5_ 
+        from
+            vote vote0_ 
+        order by
+            vote0_.vote_date asc
+&amp#27;[35mstop stopWatch
+&amp#27;[0;39m01:24:54.332 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.endTransaction:139&amp#27;[0;39m - Rolled back transaction for test: [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@2c10f9f3, testMethod = create@VoteServiceTest, testException = org.opentest4j.AssertionFailedError: 
+Expecting:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ArrayList@6792aa3e)">
+to be equal to:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018), Vote (id=100032)] (ListN@1027cdcd)">
+but was not., mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+  <testcase name="getAll" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.024">
+    <failure message="&#10;Expecting:&#10; &lt;&quot;[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ArrayList@20673498)&quot;&gt;&#10;to be equal to:&#10; &lt;&quot;[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ListN@7a8d6eb3)&quot;&gt;&#10;but was not." type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: 
+
+Expecting:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ArrayList@20673498)">
+to be equal to:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ListN@7a8d6eb3)">
+but was not.
+	at ru.restaurantvoting.service.VoteServiceTest.getAll(VoteServiceTest.java:63)
+]]></failure>
+    <system-out><![CDATA[01:24:54.334 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.startTransaction:107&amp#27;[0;39m - Began transaction (1) for test context [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@37e0614e, testMethod = getAll@VoteServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@74ab8610]; rollback [true]
+&amp#27;[35mStart stopWatch
+&amp#27;[0;39mHibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Vote as generatedAlias0 
+    order by
+        generatedAlias0.date asc */ select
+            vote0_.id as id1_5_,
+            vote0_.vote_date as vote_dat2_5_,
+            vote0_.menu_id as menu_id3_5_,
+            vote0_.user_id as user_id4_5_ 
+        from
+            vote vote0_ 
+        order by
+            vote0_.vote_date asc
+&amp#27;[35mstop stopWatch
+&amp#27;[0;39m01:24:54.340 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.endTransaction:139&amp#27;[0;39m - Rolled back transaction for test: [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@37e0614e, testMethod = getAll@VoteServiceTest, testException = org.opentest4j.AssertionFailedError: 
+Expecting:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ArrayList@20673498)">
+to be equal to:
+ <"[Vote (id=100016), Vote (id=100017), Vote (id=100018)] (ListN@7a8d6eb3)">
+but was not., mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+  <testcase name="getAllByDate" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.006"/>
+  <testcase name="update" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.005"/>
+  <testcase name="getNotFound" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.007"/>
+  <testcase name="getForUserAndDate" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.005">
+    <error message="Not found entity with id=100000" type="ru.restaurantvoting.util.exception.NotFoundException">ru.restaurantvoting.util.exception.NotFoundException: Not found entity with id=100000
+	at ru.restaurantvoting.service.VoteServiceTest.getForUserAndDate(VoteServiceTest.java:48)
+</error>
+    <system-out><![CDATA[01:24:54.363 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.startTransaction:107&amp#27;[0;39m - Began transaction (1) for test context [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@4f45290f, testMethod = getForUserAndDate@VoteServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@74ab8610]; rollback [true]
+&amp#27;[35mStart stopWatch
+&amp#27;[0;39mHibernate: 
+    /* SELECT
+        v 
+    FROM
+        Vote v 
+    WHERE
+        v.user.id=:userId 
+        AND v.date=:date */ select
+            vote0_.id as id1_5_,
+            vote0_.vote_date as vote_dat2_5_,
+            vote0_.menu_id as menu_id3_5_,
+            vote0_.user_id as user_id4_5_ 
+        from
+            vote vote0_ 
+        where
+            vote0_.user_id=? 
+            and vote0_.vote_date=?
+&amp#27;[35mstop stopWatch
+&amp#27;[0;39m01:24:54.365 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.endTransaction:139&amp#27;[0;39m - Rolled back transaction for test: [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@4f45290f, testMethod = getForUserAndDate@VoteServiceTest, testException = ru.restaurantvoting.util.exception.NotFoundException: Not found entity with id=100000, mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+  <testcase name="createWithException" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.003"/>
+  <testcase name="get" classname="ru.restaurantvoting.service.VoteServiceTest" time="0.004">
+    <failure message="&#10;Expecting value &lt;2019-04-20&gt; in field &lt;&quot;date&quot;&gt; but was &lt;2020-11-20&gt; in &lt;Vote (id=100016)&gt;.&#10;Comparison was performed on all fields but &lt;[&quot;user&quot;, &quot;menu&quot;]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+
+Expecting value <2019-04-20> in field <"date"> but was <2020-11-20> in <Vote (id=100016)>.
+Comparison was performed on all fields but <["user", "menu"]>
+	at ru.restaurantvoting.service.VoteServiceTest.get(VoteServiceTest.java:37)
+]]></failure>
+    <system-out><![CDATA[01:24:54.371 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.startTransaction:107&amp#27;[0;39m - Began transaction (1) for test context [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@3b9d85c2, testMethod = get@VoteServiceTest, testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@74ab8610]; rollback [true]
+&amp#27;[35mStart stopWatch
+&amp#27;[0;39mHibernate: 
+    /* SELECT
+        v 
+    FROM
+        Vote v 
+    WHERE
+        v.id=:id 
+        AND v.user.id=:userId 
+        AND v.menu.id=:menuId */ select
+            vote0_.id as id1_5_,
+            vote0_.vote_date as vote_dat2_5_,
+            vote0_.menu_id as menu_id3_5_,
+            vote0_.user_id as user_id4_5_ 
+        from
+            vote vote0_ 
+        where
+            vote0_.id=? 
+            and vote0_.user_id=? 
+            and vote0_.menu_id=?
+&amp#27;[35mstop stopWatch
+&amp#27;[0;39m01:24:54.376 &amp#27;[34mINFO &amp#27;[0;39m &amp#27;[36mo.s.test.context.transaction.TransactionContext.endTransaction:139&amp#27;[0;39m - Rolled back transaction for test: [DefaultTestContext@2eef43f5 testClass = VoteServiceTest, testInstance = ru.restaurantvoting.service.VoteServiceTest@3b9d85c2, testMethod = get@VoteServiceTest, testException = java.lang.AssertionError: 
+Expecting value <2019-04-20> in field <"date"> but was <2020-11-20> in <Vote (id=100016)>.
+Comparison was performed on all fields but <["user", "menu"]>, mergedContextConfiguration = [WebMergedContextConfiguration@6c65a7fc testClass = VoteServiceTest, locations = '{classpath:spring/spring-app.xml, classpath:spring/spring-mvc.xml}', classes = '{}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.test.context.web.WebDelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.populatedRequestContextHolder' -> true, 'org.springframework.test.context.web.ServletTestExecutionListener.resetRequestContextHolder' -> true]]
+]]></system-out>
+  </testcase>
+</testsuite>

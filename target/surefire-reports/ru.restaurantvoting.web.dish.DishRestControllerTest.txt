@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: ru.restaurantvoting.web.dish.DishRestControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.129 s <<< FAILURE! - in ru.restaurantvoting.web.dish.DishRestControllerTest
+get  Time elapsed: 0.092 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<403>
+	at ru.restaurantvoting.web.dish.DishRestControllerTest.get(DishRestControllerTest.java:26)
+
