@@ -1,6 +1,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d4009428931a461ebbb4e3d75ae360f5)](https://www.codacy.com/gh/zaakki/restVote/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=zaakki/restVote&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://www.travis-ci.com/zaakki/restVote.svg?branch=master)](https://travis-ci.org/github/zaakki/topjava)
-#Voting system
+
+##Voting system
 
 <h2>Цель проекта:</h2>
 Design and implement a REST API using Hibernate/Spring/SpringMVC (or Spring-Boot) without frontend.
