@@ -39,7 +39,7 @@
       <DataType>INTEGER|4s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="16" parent="6" name="SYS_IDX_SYS_PK_10169_10173">
+    <index id="16" parent="6" name="SYS_IDX_SYS_PK_10121_10125">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
@@ -49,11 +49,11 @@
 NAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="18" parent="6" name="SYS_IDX_DISH_MENU_FK_10177">
+    <index id="18" parent="6" name="SYS_IDX_DISH_MENU_FK_10129">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MENU_ID</ColNames>
     </index>
-    <key id="19" parent="6" name="SYS_PK_10169">
+    <key id="19" parent="6" name="SYS_PK_10121">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -65,7 +65,7 @@ NAME</ColNames>
     <foreign-key id="21" parent="6" name="DISH_MENU_FK">
       <ColNames>MENU_ID</ColNames>
       <RefTableName>MENU</RefTableName>
-      <RefKeyName>SYS_PK_10161</RefKeyName>
+      <RefKeyName>SYS_PK_10113</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -85,7 +85,7 @@ NAME</ColNames>
       <DataType>INTEGER|4s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="25" parent="7" name="SYS_IDX_SYS_PK_10161_10164">
+    <index id="25" parent="7" name="SYS_IDX_SYS_PK_10113_10116">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
@@ -95,11 +95,11 @@ NAME</ColNames>
 RESTAURANT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="27" parent="7" name="SYS_IDX_MENU_RESTAURANT_FK_10167">
+    <index id="27" parent="7" name="SYS_IDX_MENU_RESTAURANT_FK_10119">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>RESTAURANT_ID</ColNames>
     </index>
-    <key id="28" parent="7" name="SYS_PK_10161">
+    <key id="28" parent="7" name="SYS_PK_10113">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -111,7 +111,7 @@ RESTAURANT_ID</ColNames>
     <foreign-key id="30" parent="7" name="MENU_RESTAURANT_FK">
       <ColNames>RESTAURANT_ID</ColNames>
       <RefTableName>RESTAURANT</RefTableName>
-      <RefKeyName>SYS_PK_10157</RefKeyName>
+      <RefKeyName>SYS_PK_10109</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -126,7 +126,7 @@ RESTAURANT_ID</ColNames>
       <DataType>VARCHAR(255)|12s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="33" parent="8" name="SYS_IDX_SYS_PK_10157_10159">
+    <index id="33" parent="8" name="SYS_IDX_SYS_PK_10109_10111">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
@@ -135,7 +135,7 @@ RESTAURANT_ID</ColNames>
       <ColNames>NAME</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="35" parent="8" name="SYS_PK_10157">
+    <key id="35" parent="8" name="SYS_PK_10109">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -174,7 +174,7 @@ RESTAURANT_ID</ColNames>
       <DataType>BOOLEAN|16s</DataType>
       <DefaultExpression>TRUE</DefaultExpression>
     </column>
-    <index id="43" parent="9" name="SYS_IDX_SYS_PK_10142_10146">
+    <index id="43" parent="9" name="SYS_IDX_SYS_PK_10094_10098">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
@@ -183,7 +183,7 @@ RESTAURANT_ID</ColNames>
       <ColNames>EMAIL</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="45" parent="9" name="SYS_PK_10142">
+    <key id="45" parent="9" name="SYS_PK_10094">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -206,7 +206,7 @@ RESTAURANT_ID</ColNames>
 ROLE</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="50" parent="10" name="SYS_IDX_USER_ROLE_FK_10155">
+    <index id="50" parent="10" name="SYS_IDX_USER_ROLE_FK_10107">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>USER_ID</ColNames>
     </index>
@@ -217,7 +217,7 @@ ROLE</ColNames>
     <foreign-key id="52" parent="10" name="USER_ROLE_FK">
       <ColNames>USER_ID</ColNames>
       <RefTableName>USERS</RefTableName>
-      <RefKeyName>SYS_PK_10142</RefKeyName>
+      <RefKeyName>SYS_PK_10094</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
@@ -242,7 +242,7 @@ ROLE</ColNames>
       <DataType>INTEGER|4s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="57" parent="11" name="SYS_IDX_SYS_PK_10179_10183">
+    <index id="57" parent="11" name="SYS_IDX_SYS_PK_10131_10135">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Unique>1</Unique>
@@ -252,15 +252,15 @@ ROLE</ColNames>
 USER_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="59" parent="11" name="SYS_IDX_USER_ID_FK_10187">
+    <index id="59" parent="11" name="SYS_IDX_USER_ID_FK_10139">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>USER_ID</ColNames>
     </index>
-    <index id="60" parent="11" name="SYS_IDX_MENU_ID_FK_10189">
+    <index id="60" parent="11" name="SYS_IDX_MENU_ID_FK_10141">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>MENU_ID</ColNames>
     </index>
-    <key id="61" parent="11" name="SYS_PK_10179">
+    <key id="61" parent="11" name="SYS_PK_10131">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ID</ColNames>
       <Primary>1</Primary>
@@ -272,14 +272,14 @@ USER_ID</ColNames>
     <foreign-key id="63" parent="11" name="USER_ID_FK">
       <ColNames>USER_ID</ColNames>
       <RefTableName>USERS</RefTableName>
-      <RefKeyName>SYS_PK_10142</RefKeyName>
+      <RefKeyName>SYS_PK_10094</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
     <foreign-key id="64" parent="11" name="MENU_ID_FK">
       <ColNames>MENU_ID</ColNames>
       <RefTableName>MENU</RefTableName>
-      <RefKeyName>SYS_PK_10161</RefKeyName>
+      <RefKeyName>SYS_PK_10113</RefKeyName>
       <RefColNames>ID</RefColNames>
       <OnDelete>cascade</OnDelete>
     </foreign-key>
